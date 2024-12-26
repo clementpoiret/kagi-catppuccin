@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Kagi Catppuccin
 @namespace      github.com/catppuccin/kagi
-@version        0.0.5
+@version        0.0.6
 @description    Soothing pasted theme for Kagi
 @author         clementpoiret
 @license MIT
@@ -85,6 +85,8 @@
 
     --primary-25: var(--mocha-mantle);
     --primary-100: var(--mocha-crust);
+    --primary-200: var(--mocha-surface0);
+    --primary-400: var(--mocha-text);
     --primary-600: var(--mocha-text);
     --primary-700: var(--mocha-text);
     --primary-800: var(--mocha-lavender);
@@ -150,6 +152,22 @@
   }
   .serp-nav .nav_item.n_ma:after {
     background-color: var(--catppuccin-green);
+  }
+  .landing-category-select .landing_cat_buttons > button.n_im.--active,
+  .landing-category-select .landing_cat_buttons > button.n_im:hover {
+    border-bottom: 2px solid var(--catppuccin-blue);
+  }
+  .landing-category-select .landing_cat_buttons > button.n_vi.--active,
+  .landing-category-select .landing_cat_buttons > button.n_vi:hover {
+    border-bottom: 2px solid var(--catppuccin-red);
+  }
+  .landing-category-select .landing_cat_buttons > button.n_ne.--active,
+  .landing-category-select .landing_cat_buttons > button.n_ne:hover {
+    border-bottom: 2px solid var(--catppuccin-mauve);
+  }
+  .landing-category-select .landing_cat_buttons > button.n_ma.--active,
+  .landing-category-select .landing_cat_buttons > button.n_ma:hover {
+    border-bottom: 2px solid var(--catppuccin-green);
   }
 
   /* disable links borders */
@@ -264,7 +282,8 @@
   .k_ui_toggle_switch {
     --active-bg-color: var(--color_link);
   }
-  .k_ui_toggle_switch_bar {
+  .k_ui_toggle_switch input:checked ~ .k_ui_toggle_switch_bar,
+  .k_ui_toggle_switch.--enabled .k_ui_toggle_switch_bar {
     background: var(--catppuccin-flavor);
     box-shadow: 0 0 0 1px var(--catppuccin-flavor);
   }

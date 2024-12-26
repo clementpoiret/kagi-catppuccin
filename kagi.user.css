@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Kagi Catppuccin
 @namespace      github.com/catppuccin/kagi
-@version        0.0.4
+@version        0.0.5
 @description    Soothing pasted theme for Kagi
 @author         clementpoiret
 @license MIT
@@ -51,6 +51,7 @@
     --primary-hover: var(--mocha-base);
 
     --header-bg: var(--mocha-base);
+    --header-text: var(--mocha-text);
     --header-border: var(--mocha-surface0);
 
     --app-sidebar-bg: var(--mocha-base);
@@ -67,6 +68,12 @@
 
     --domain-rank-icon-color-trackers: var(--mocha-red);
 
+    --catppuccin-flavor: var(--mocha-lavender);
+    --catppuccin-blue: var(--mocha-blue);
+    --catppuccin-red: var(--mocha-red);
+    --catppuccin-mauve: var(--mocha-mauve);
+    --catppuccin-green: var(--mocha-green);
+
     --color_link: var(--mocha-blue);
     --primary-hover: var(--mocha-lavender);
     --primary-visited: var(--mocha-mauve);
@@ -78,6 +85,7 @@
 
     --primary-25: var(--mocha-mantle);
     --primary-100: var(--mocha-crust);
+    --primary-600: var(--mocha-text);
     --primary-700: var(--mocha-text);
     --primary-800: var(--mocha-lavender);
 
@@ -97,22 +105,6 @@
     --dd-list-input-bg: var(--mocha-surface0);
     --kagi-accent: var(--mocha-surface0);
     --filter-dd-bg: var(--mocha-surface0);
-
-    .serp-nav .nav_item.n_se:after {
-      background-color: var(--kagi-yellow);
-    }
-    .serp-nav .nav_item.n_im:after {
-      background-color: var(--mocha-blue);
-    }
-    .serp-nav .nav_item.n_vi:after {
-      background-color: var(--mocha-red);
-    }
-    .serp-nav .nav_item.n_ne:after {
-      background-color: var(--mocha-mauve);
-    }
-    .serp-nav .nav_item.n_ma:after {
-      background-color: var(--mocha-green);
-    }
 
     /* mobile */
     --m_sri_gap_color: var(--mocha-surface0);
@@ -143,6 +135,21 @@
   .serp-nav .nav_item:hover:after,
   ._0_lenses .k_ui_dropdown.--active .k_ui_dropdown_first_item span:after {
     border-color: var(--primary);
+  }
+  .serp-nav .nav_item.n_se:after {
+    background-color: var(--kagi-yellow);
+  }
+  .serp-nav .nav_item.n_im:after {
+    background-color: var(--catppuccin-blue);
+  }
+  .serp-nav .nav_item.n_vi:after {
+    background-color: var(--catppuccin-red);
+  }
+  .serp-nav .nav_item.n_ne:after {
+    background-color: var(--catppuccin-mauve);
+  }
+  .serp-nav .nav_item.n_ma:after {
+    background-color: var(--catppuccin-green);
   }
 
   /* disable links borders */
@@ -256,6 +263,10 @@
 
   .k_ui_toggle_switch {
     --active-bg-color: var(--color_link);
+  }
+  .k_ui_toggle_switch_bar {
+    background: var(--catppuccin-flavor);
+    box-shadow: 0 0 0 1px var(--catppuccin-flavor);
   }
 
   .footer .footerInner ul li,

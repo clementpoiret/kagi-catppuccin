@@ -1,3 +1,13 @@
+/* ==UserStyle==
+@name           Kagi Catppuccin
+@namespace      github.com/catppuccin/kagi
+@version        0.0.1
+@description    Soothing pasted theme for Kagi
+@author         clementpoiret
+@license MIT
+@updateURL      https://github.com/clementpoiret/kagi-catppuccin/raw/main/kagi.user.css
+==/UserStyle== */
+
 @-moz-document regexp("https://kagi.com/.*$")
 {
   :root {

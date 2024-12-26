@@ -1,0 +1,386 @@
+@-moz-document regexp("https://kagi.com/.*$")
+{
+  :root {
+    --latte-crust: #11111b;
+    --latte-mantle: #181825;
+    --latte-base: #1e1e2e;
+    --latte-text: #cdd6f4;
+    --latte-surface0: #313244;
+    --latte-surface1: #45475a;
+    --latte-surface2: #585b70;
+    --latte-lavender: #b4befe;
+    --latte-red: #f38ba8;
+    --latte-mauve: #cba6f7;
+  }
+
+  .theme_dark,
+  .theme_moon_dark,
+  .theme_moon_dark_conditional {
+    --app-bg: var(--latte-base);
+    --page-text: var(--latte-text);
+    --app-text: var(--latte-text);
+    --primary: var(--latte-text);
+    --primary-hover: var(--latte-base);
+
+    --header-bg: var(--latte-base);
+    --header-border: var(--latte-surface0);
+
+    --app-sidebar-bg: var(--latte-base);
+
+    --input-bg: var(--latte-mantle);
+    --color-search-input: var(--latte-base);
+
+    --search-result-title: var(--latte-text);
+    --search-result-title-hover: var(--latte-lavender);
+    --search-result-content-text: var(--latte-lavender);
+    --search-result-url-link: var(--latte-lavender);
+    --search-result-date-bg: var(--latte-surface0);
+    --search-result-date-new-bg: var(--latte-surface1);
+
+    --domain-rank-icon-color-trackers: var(--latte-red);
+
+    --color_link: var(--latte-red);
+    --primary-hover: var(--latte-lavender);
+    --primary-visited: var(--latte-mauve);
+    --related-item-bg: var(--latte-surface0);
+    --inline-domain-tag-bg: var(--latte-surface0);
+    --inline-header-border: var(--latte-surface0);
+    --inline-header-title: var(--latte-text);
+    --inline-widget-bg: var(--latte-surface0);
+
+    --primary-25: var(--latte-mantle);
+    --primary-100: var(--latte-crust);
+    --primary-700: var(--latte-mauve);
+    --primary-800: var(--latte-lavender);
+
+    --resultsummary-highlight: var(--latte-red);
+    --resultsummary-highlight_text: var(--latte-surface0);
+
+    --wiki-title: var(--latte-text);
+    --wiki-content-links: var(--latte-red);
+    --wiki-nw-links: var(--latte-red);
+    --result-item-title-border: transparent;
+
+    --site_info_bg: var(--latte-surface0);
+    --site_info_bottom_bg: var(--latte-mantle);
+    --btn-group-bg: var(--latte-mantle);
+
+    --dd-hover-bg: var(--latte-surface0);
+    --dd-list-input-bg: var(--latte-surface0);
+    --kagi-accent: var(--latte-surface0);
+    --filter-dd-bg: var(--latte-surface0);
+
+    /* mobile */
+    --m_sri_gap_color: var(--latte-surface0);
+  }
+
+  /* disable horizontal scrollbars */
+  body {
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: var(--color_link);
+    color: var(--latte-surface0);
+  }
+
+  /* header, logo */
+  .app-logo.--kagi {
+    top: 26px;
+  }
+
+  /* container-level */
+  .results-box {
+    margin-top: 10px;
+  }
+
+  /* update color borders for serp tabs */
+  .serp-nav .nav_item.--active:after,
+  .serp-nav .nav_item:hover:after,
+  ._0_lenses .k_ui_dropdown.--active .k_ui_dropdown_first_item span:after {
+    border-color: var(--primary);
+  }
+
+  /* disable links borders */
+  #layout-v2 a,
+  .__sri-title .__sri_title_link,
+  .__sri-title .__sri_title_link:hover,
+  .wikipediaResult a:hover {
+    border-bottom: 0;
+  }
+
+  /* general input focus */
+  :focus-visible {
+    outline-color: var(--color_link);
+  }
+
+  /* result tweaks */
+  .__sri-title-box,
+  .__sri-title,
+  .__sri-url-box,
+  .__sri-body {
+    padding-left: 0;
+  }
+
+  .__sri-title .__domain-favicon {
+    margin-left: -25px;
+  }
+
+  .__sri-preview {
+    left: 0;
+  }
+
+  .__sri-url-box {
+    margin-bottom: 4px;
+  }
+
+  .__sri-url {
+    font-size: 0.75rem;
+  }
+
+  .__sri-time {
+    background-color: transparent;
+    color: var(--latte-surface2);
+    padding: 0;
+  }
+
+  .__sri-time::after {
+    content: "—";
+    display: inline-block;
+    padding: 0 4px;
+  }
+
+  .__sri-time.--new {
+    background: transparent;
+    color: var(--color_link);
+  }
+
+  .__sri-desc {
+    line-height: 1.57;
+  }
+
+  .newsResultItem .newsResultBody {
+    margin-top: 0;
+  }
+
+  .top_podcasts_box:empty {
+    display: none;
+  }
+
+  .freeScroller {
+    overflow-x: auto !important;
+  }
+
+  /* domain info popover */
+  #domainInfoModal .d-info-box-title-header {
+    background: transparent;
+  }
+
+  #domainInfoModal .d-info-domain-title {
+    text-shadow: none;
+    color: var(--color-primary);
+  }
+
+  #domainInfoModal .rakned-box-close {
+    color: var(--color-primary);
+  }
+
+  /* wolfram-alpha/"smart" things specific */
+  .widget_holder .wasb,
+  .wasb,
+  .wasb-ans {
+    font-family: var(--font-main);
+  }
+
+  .widget_holder .wasb {
+    border: 1px solid var(--color-primary-dim_3);
+  }
+
+  .suggestions_area {
+    border-bottom: 1px solid var(--color-primary-dim_3);
+  }
+
+  /* misc */
+  .wikipediaResult .wiki-title a:hover {
+    color: var(--color-primary_hover);
+    border-bottom: 0;
+  }
+
+  .wiki-desc-box {
+    font-size: 14px;
+  }
+
+  .k_ui_toggle_switch {
+    --active-bg-color: var(--color_link);
+  }
+
+  .footer .footerInner ul li,
+  footer .footerInner ul li {
+    color: inherit;
+  }
+
+  /* mobile specific */
+  @media screen and (max-width: 767px) {
+    /* header */
+    .m-h {
+      padding: 0;
+    }
+
+    .m-h .m-h-i {
+      height: auto;
+    }
+
+    .m-h .control-center-btn {
+      top: 32px;
+      z-index: 51;
+    }
+
+    .m-h .m-app-logo {
+      display: none;
+    }
+
+    /* search box */
+    .search-form {
+      height: auto;
+    }
+
+    .search_form_box {
+      width: 100%;
+    }
+
+    .search-form .search-input-container {
+      padding-inline: 0;
+      border: 0;
+    }
+
+    .search-form .search_area {
+      min-height: auto;
+    }
+
+    .search-form .search-input-box {
+      border: 1px solid var(--header-border);
+      border-radius: 24px;
+      padding: 0 14px;
+    }
+
+    .s-f-w .search-form-container {
+      padding: 10px 46px 5px 10px;
+    }
+
+    .s-f-w.--active {
+      margin: 0;
+    }
+
+    .s-f-w.--active .search-input-container {
+      border: 0;
+      min-height: 64px;
+    }
+
+    .s-f-w.--active .search-form-container {
+      margin: 0;
+      padding: 0 10px;
+      height: 64px;
+    }
+
+    .s-f-w.--active .search-form {
+      padding-top: 0;
+    }
+
+    .s-f-w.--active .search-input-box {
+      margin-left: 4px;
+      padding-right: 0;
+      max-width: 100%;
+    }
+
+    .s-f-w.--active .search-form-icons {
+      margin-right: 0;
+    }
+
+    .s-f-w.--active .auto_suggestions {
+      top: 64px;
+    }
+
+    .s-f-w.--active .m-b-arrow {
+      position: relative;
+      width: auto;
+      height: auto;
+      left: 0;
+    }
+
+    #searchFormSubmit {
+      display: none;
+    }
+
+    .m-h .search-form-icons .clear-search {
+      margin-right: 4px;
+    }
+
+    .m-b-arrow {
+      width: 35px;
+      top: 0;
+    }
+
+    .search-form .auto_suggestions {
+      margin: 0;
+      border: 0;
+    }
+
+    .widgetContent {
+      margin-bottom: 0;
+    }
+
+    /* remove top/bottom border between results */
+    .search-result,
+    .sri-group,
+    .inline-content + .search-result,
+    .inline-content + .sri-group {
+      border-top: 0;
+      border-bottom: 0;
+    }
+
+    /* tighten line-height */
+    .__sri-title .__sri_title_link {
+      line-height: 1.65rem;
+    }
+
+    /* hide inline image preview */
+    .__sri-body.--img .__sri-preview {
+      display: none;
+    }
+
+    .__sri-body.--img .__sri-desc:before {
+      display: none;
+    }
+
+    /* tighten up secondary results to match rhythm */
+    .sri-group .sr-group {
+      margin-top: 15px;
+    }
+
+    /* disable bottom-right distracting button on scroll up */
+    .quick-search-btn {
+      display: none;
+    }
+
+    /* fix video results spacing */
+    #newsHeader,
+    .headerVideos {
+      margin-right: 0;
+    }
+
+    /* clean up page 2 results spacing */
+    ._0_page-separator {
+      margin-bottom: 15px;
+    }
+
+    /* give the page 2 button more bottom room */
+    .main-footer {
+      padding-bottom: 40px;
+    }
+
+    /* light-specific */
+    .theme_light .search-form .search-form-icons {
+      /* background: linear-gradient(90deg, transparent 0%, rgb(255, 255, 255) 50%); */
+    }
+  }
+}

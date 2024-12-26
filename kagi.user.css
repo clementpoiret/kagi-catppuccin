@@ -54,6 +54,8 @@
 
     --app-sidebar-bg: var(--mocha-base);
 
+    --settings-app-inner-bg: var(--mocha-mantle);
+
     --input-bg: var(--mocha-mantle);
     --color-search-input: var(--mocha-base);
     --color-search-input-border: var(--mocha-text);

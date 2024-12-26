@@ -56,6 +56,7 @@
 
     --input-bg: var(--mocha-mantle);
     --color-search-input: var(--mocha-base);
+    --color-search-input-border: var(--mocha-text);
 
     --search-result-title: var(--mocha-lavender);
     --search-result-title-hover: var(--mocha-blue);
@@ -87,6 +88,7 @@
     --primary-100: var(--mocha-crust);
     --primary-200: var(--mocha-surface0);
     --primary-400: var(--mocha-text);
+    --primary-500: var(--mocha-text);
     --primary-600: var(--mocha-text);
     --primary-700: var(--mocha-text);
     --primary-800: var(--mocha-lavender);

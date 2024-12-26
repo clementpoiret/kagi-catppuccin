@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Kagi Catppuccin
 @namespace      github.com/catppuccin/kagi
-@version        0.0.1
+@version        0.0.2
 @description    Soothing pasted theme for Kagi
 @author         clementpoiret
 @license MIT
@@ -11,77 +11,111 @@
 @-moz-document regexp("https://kagi.com/.*$")
 {
   :root {
-    --latte-crust: #11111b;
-    --latte-mantle: #181825;
-    --latte-base: #1e1e2e;
-    --latte-text: #cdd6f4;
-    --latte-surface0: #313244;
-    --latte-surface1: #45475a;
-    --latte-surface2: #585b70;
-    --latte-lavender: #b4befe;
-    --latte-red: #f38ba8;
-    --latte-mauve: #cba6f7;
+    --kagi-accent: #ffb319;
+
+    --mocha-rosewater: #f5e0dc;
+    --mocha-flamingo: #f2cdcd;
+    --mocha-pink: #f5c2e7;
+    --mocha-mauve: #cba6f7;
+    --mocha-red: #f38ba8;
+    --mocha-maroon: #eba0ac;
+    --mocha-peach: #fab387;
+    --mocha-yellow: #f9e2af;
+    --mocha-green: #a6e3a1;
+    --mocha-teal: #94e2d5;
+    --mocha-sky: #89dceb;
+    --mocha-sapphire: #74c7ec;
+    --mocha-blue: #89b4fa;
+    --mocha-lavender: #b4befe;
+    --mocha-text: #cdd6f4;
+    --mocha-subtext1: #bac2de;
+    --mocha-subtext0: #a6adc8;
+    --mocha-overlay2: #9399b2;
+    --mocha-overlay1: #7f849c;
+    --mocha-overlay0: #6c7086;
+    --mocha-surface2: #585b70;
+    --mocha-surface1: #45475a;
+    --mocha-surface0: #313244;
+    --mocha-base: #1e1e2e;
+    --mocha-mantle: #181825;
+    --mocha-crust: #11111b;
   }
 
   .theme_dark,
   .theme_moon_dark,
   .theme_moon_dark_conditional {
-    --app-bg: var(--latte-base);
-    --page-text: var(--latte-text);
-    --app-text: var(--latte-text);
-    --primary: var(--latte-text);
-    --primary-hover: var(--latte-base);
+    --app-bg: var(--mocha-base);
+    --page-text: var(--mocha-text);
+    --app-text: var(--mocha-text);
+    --primary: var(--mocha-text);
+    --primary-hover: var(--mocha-base);
 
-    --header-bg: var(--latte-base);
-    --header-border: var(--latte-surface0);
+    --header-bg: var(--mocha-base);
+    --header-border: var(--mocha-surface0);
 
-    --app-sidebar-bg: var(--latte-base);
+    --app-sidebar-bg: var(--mocha-base);
 
-    --input-bg: var(--latte-mantle);
-    --color-search-input: var(--latte-base);
+    --input-bg: var(--mocha-mantle);
+    --color-search-input: var(--mocha-base);
 
-    --search-result-title: var(--latte-text);
-    --search-result-title-hover: var(--latte-lavender);
-    --search-result-content-text: var(--latte-lavender);
-    --search-result-url-link: var(--latte-lavender);
-    --search-result-date-bg: var(--latte-surface0);
-    --search-result-date-new-bg: var(--latte-surface1);
+    --search-result-title: var(--mocha-text);
+    --search-result-title-hover: var(--mocha-lavender);
+    --search-result-content-text: var(--mocha-lavender);
+    --search-result-url-link: var(--mocha-lavender);
+    --search-result-date-bg: var(--mocha-surface0);
+    --search-result-date-new-bg: var(--mocha-surface1);
 
-    --domain-rank-icon-color-trackers: var(--latte-red);
+    --domain-rank-icon-color-trackers: var(--mocha-red);
 
-    --color_link: var(--latte-red);
-    --primary-hover: var(--latte-lavender);
-    --primary-visited: var(--latte-mauve);
-    --related-item-bg: var(--latte-surface0);
-    --inline-domain-tag-bg: var(--latte-surface0);
-    --inline-header-border: var(--latte-surface0);
-    --inline-header-title: var(--latte-text);
-    --inline-widget-bg: var(--latte-surface0);
+    --color_link: var(--mocha-red);
+    --primary-hover: var(--mocha-lavender);
+    --primary-visited: var(--mocha-mauve);
+    --related-item-bg: var(--mocha-surface0);
+    --inline-domain-tag-bg: var(--mocha-surface0);
+    --inline-header-border: var(--mocha-surface0);
+    --inline-header-title: var(--mocha-text);
+    --inline-widget-bg: var(--mocha-surface0);
 
-    --primary-25: var(--latte-mantle);
-    --primary-100: var(--latte-crust);
-    --primary-700: var(--latte-mauve);
-    --primary-800: var(--latte-lavender);
+    --primary-25: var(--mocha-mantle);
+    --primary-100: var(--mocha-crust);
+    --primary-700: var(--mocha-mauve);
+    --primary-800: var(--mocha-lavender);
 
-    --resultsummary-highlight: var(--latte-red);
-    --resultsummary-highlight_text: var(--latte-surface0);
+    --resultsummary-highlight: var(--mocha-red);
+    --resultsummary-highlight_text: var(--mocha-surface0);
 
-    --wiki-title: var(--latte-text);
-    --wiki-content-links: var(--latte-red);
-    --wiki-nw-links: var(--latte-red);
+    --wiki-title: var(--mocha-text);
+    --wiki-content-links: var(--mocha-red);
+    --wiki-nw-links: var(--mocha-red);
     --result-item-title-border: transparent;
 
-    --site_info_bg: var(--latte-surface0);
-    --site_info_bottom_bg: var(--latte-mantle);
-    --btn-group-bg: var(--latte-mantle);
+    --site_info_bg: var(--mocha-surface0);
+    --site_info_bottom_bg: var(--mocha-mantle);
+    --btn-group-bg: var(--mocha-mantle);
 
-    --dd-hover-bg: var(--latte-surface0);
-    --dd-list-input-bg: var(--latte-surface0);
-    --kagi-accent: var(--latte-surface0);
-    --filter-dd-bg: var(--latte-surface0);
+    --dd-hover-bg: var(--mocha-surface0);
+    --dd-list-input-bg: var(--mocha-surface0);
+    --kagi-accent: var(--mocha-surface0);
+    --filter-dd-bg: var(--mocha-surface0);
+
+    .serp-nav .nav_item.n_se:after {
+      background-color: var(--kagi-accent);
+    }
+    .serp-nav .nav_item.n_im:after {
+      background-color: var(--mocha-blue);
+    }
+    .serp-nav .nav_item.n_vi:after {
+      background-color: var(--mocha-red);
+    }
+    .serp-nav .nav_item.n_ne:after {
+      background-color: var(--mocha-mauve);
+    }
+    .serp-nav .nav_item.n_ma:after {
+      background-color: var(--mocha-green);
+    }
 
     /* mobile */
-    --m_sri_gap_color: var(--latte-surface0);
+    --m_sri_gap_color: var(--mocha-surface0);
   }
 
   /* disable horizontal scrollbars */
@@ -91,7 +125,7 @@
 
   ::selection {
     background-color: var(--color_link);
-    color: var(--latte-surface0);
+    color: var(--mocha-surface0);
   }
 
   /* header, logo */
@@ -150,7 +184,7 @@
 
   .__sri-time {
     background-color: transparent;
-    color: var(--latte-surface2);
+    color: var(--mocha-surface2);
     padding: 0;
   }
 

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Kagi Catppuccin
 @namespace      github.com/catppuccin/kagi
-@version        0.0.2
+@version        0.0.3
 @description    Soothing pasted theme for Kagi
 @author         clementpoiret
 @license MIT
@@ -58,16 +58,16 @@
     --input-bg: var(--mocha-mantle);
     --color-search-input: var(--mocha-base);
 
-    --search-result-title: var(--mocha-text);
-    --search-result-title-hover: var(--mocha-lavender);
-    --search-result-content-text: var(--mocha-lavender);
+    --search-result-title: var(--mocha-lavender);
+    --search-result-title-hover: var(--mocha-blue);
+    --search-result-content-text: var(--mocha-text);
     --search-result-url-link: var(--mocha-lavender);
     --search-result-date-bg: var(--mocha-surface0);
     --search-result-date-new-bg: var(--mocha-surface1);
 
     --domain-rank-icon-color-trackers: var(--mocha-red);
 
-    --color_link: var(--mocha-red);
+    --color_link: var(--mocha-blue);
     --primary-hover: var(--mocha-lavender);
     --primary-visited: var(--mocha-mauve);
     --related-item-bg: var(--mocha-surface0);
@@ -78,7 +78,7 @@
 
     --primary-25: var(--mocha-mantle);
     --primary-100: var(--mocha-crust);
-    --primary-700: var(--mocha-mauve);
+    --primary-700: var(--mocha-text);
     --primary-800: var(--mocha-lavender);
 
     --resultsummary-highlight: var(--mocha-red);

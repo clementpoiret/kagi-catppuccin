@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Kagi Catppuccin
 @namespace      github.com/catppuccin/kagi
-@version        0.0.8
+@version        0.0.9
 @description    Soothing pasted theme for Kagi
 @author         clementpoiret
 @license MIT
@@ -12,6 +12,7 @@
 {
   :root {
     --kagi-yellow: #ffb319;
+    --kagi-orange: #fab387;
 
     --mocha-rosewater: #f5e0dc;
     --mocha-flamingo: #f2cdcd;
